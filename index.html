@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Multi Services Ltd.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .active {
+        color: #2563eb; /* Tailwind blue-600 */
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-900 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-xl md:text-2xl font-bold text-blue-700">
+          Global Multi Services Ltd.
+        </h1>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex space-x-6 text-sm font-medium">
+          <a href="#services" class="nav-link text-gray-700 hover:text-blue-600"
+            >Services</a
+          >
+          <a href="#team" class="nav-link text-gray-700 hover:text-blue-600"
+            >Our Team</a
+          >
+          <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600"
+            >Contact</a
+          >
+        </nav>
+
+        <!-- Mobile menu button -->
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2">
+        <a
+          href="#services"
+          class="block nav-link text-gray-700 hover:text-blue-600"
+          >Services</a
+        >
+        <a href="#team" class="block nav-link text-gray-700 hover:text-blue-600"
+          >Our Team</a
+        >
+        <a
+          href="#contact"
+          class="block nav-link text-gray-700 hover:text-blue-600"
+          >Contact</a
+        >
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-100 py-16 text-center px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        Your Partner in Trading, Construction & Agriculture
+      </h2>
+      <p class="text-lg">
+        Delivering solutions across multiple industries with trust and
+        integrity.
+      </p>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-16 container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Our Services</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <!-- Service Card -->
+        <div class="bg-white p-5 shadow-md rounded-lg">
+          <img
+            src="https://images.unsplash.com/photo-1581090700227-1e8a9371e2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+            class="w-full h-40 object-cover rounded"
+            alt="Trading"
+          />
+          <h3 class="text-xl font-semibold mt-4">General Trading & Supply</h3>
+          <p>
+            Import/export and supply of general goods for local and
+            international clients.
+          </p>
+        </div>
+
+        <div class="bg-white p-5 shadow-md rounded-lg">
+          <img
+            src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+            class="w-full h-40 object-cover rounded"
+            alt="Agriculture"
+          />
+          <h3 class="text-xl font-semibold mt-4">Agriculture & Farming</h3>
+          <p>
+            Providing innovative farming techniques, fisheries, and agricultural
+            support.
+          </p>
+        </div>
+
+        <div class="bg-white p-5 shadow-md rounded-lg">
+          <img
+            src="https://images.unsplash.com/photo-1605559424843-5fef94fc41b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+            class="w-full h-40 object-cover rounded"
+            alt="Construction"
+          />
+          <h3 class="text-xl font-semibold mt-4">Civil Works & Engineering</h3>
+          <p>
+            We handle road and building construction, civil works, and plumbing
+            projects.
+          </p>
+        </div>
+
+        <div class="bg-white p-5 shadow-md rounded-lg">
+          <img
+            src="https://images.unsplash.com/photo-1580128637393-bbb3b4b04060?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            class="w-full h-40 object-cover rounded"
+            alt="Transport"
+          />
+          <h3 class="text-xl font-semibold mt-4">Transport Services</h3>
+          <p>
+            Reliable logistics and transport solutions across various regions.
+          </p>
+        </div>
+
+        <div class="bg-white p-5 shadow-md rounded-lg">
+          <img
+            src="https://images.unsplash.com/photo-1580910051070-dc3e8c3fd017?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+            class="w-full h-40 object-cover rounded"
+            alt="Electronics"
+          />
+          <h3 class="text-xl font-semibold mt-4">Electrical Appliances</h3>
+          <p>
+            Supply and dealership of quality electrical and electronic devices.
+          </p>
+        </div>
+
+        <div class="bg-white p-5 shadow-md rounded-lg">
+          <img
+            src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+            class="w-full h-40 object-cover rounded"
+            alt="Real Estate"
+          />
+          <h3 class="text-xl font-semibold mt-4">Real Estate Development</h3>
+          <p>Developing residential, commercial, and industrial properties.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="py-16 bg-white px-4">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10">Meet Our Team</h2>
+        <div class="flex flex-wrap justify-center gap-8">
+          <div class="text-center">
+            <img
+              src="https://source.unsplash.com/150x150/?man,ceo"
+              class="rounded-full mx-auto mb-4"
+            />
+            <h4 class="font-semibold">Bismark Obeng</h4>
+            <p class="text-sm text-gray-600">Founder & CEO</p>
+          </div>
+
+          <div class="text-center">
+            <img
+              src="https://source.unsplash.com/150x150/?woman,manager"
+              class="rounded-full mx-auto mb-4"
+            />
+            <h4 class="font-semibold">Ama Asante</h4>
+            <p class="text-sm text-gray-600">Operations Manager</p>
+          </div>
+
+          <div class="text-center">
+            <img
+              src="https://source.unsplash.com/150x150/?man,engineer"
+              class="rounded-full mx-auto mb-4"
+            />
+            <h4 class="font-semibold">Kwame Mensah</h4>
+            <p class="text-sm text-gray-600">Head of Engineering</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 bg-blue-50 px-4">
+      <div class="container mx-auto max-w-2xl text-center">
+        <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+        <p class="mb-6">
+          Have questions or want to work with us? Reach out today!
+        </p>
+
+        <form class="space-y-4 text-left">
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="w-full p-3 border border-gray-300 rounded"
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="w-full p-3 border border-gray-300 rounded"
+          />
+          <textarea
+            rows="4"
+            placeholder="Your Message"
+            class="w-full p-3 border border-gray-300 rounded"
+          ></textarea>
+          <button
+            class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 text-center text-sm">
+      &copy; 2025 Global Multi Services Ltd. All rights reserved.
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      // Toggle mobile menu
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // ScrollSpy for active link
+      const sections = document.querySelectorAll("section[id]");
+
+      window.addEventListener("scroll", () => {
+        let scrollY = window.pageYOffset;
+
+        sections.forEach((section) => {
+          const sectionHeight = section.offsetHeight;
+          const sectionTop = section.offsetTop - 100;
+          const sectionId = section.getAttribute("id");
+
+          if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            navLinks.forEach((link) => {
+              link.classList.remove("active");
+              if (link.getAttribute("href") === `#${sectionId}`) {
+                link.classList.add("active");
+              }
+            });
+          }
+        });
+      });
+
+      // Close mobile menu on link click
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
